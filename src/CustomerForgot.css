@@ -1,0 +1,421 @@
+/* =========================================
+   FOODHUB - COMPACT RESET PASSWORD
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #111827;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.forgot-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.forgot-left {
+    width: 42%;
+    height: 100vh;
+    background: #ff5a00;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 55px 40px 30px;
+}
+
+.logo {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 55px;
+}
+
+.forgot-left h1 {
+    font-size: 50px;
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.forgot-left p {
+    max-width: 380px;
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 55px;
+}
+
+
+/* FOOD ICONS */
+
+.food-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: nowrap;
+    font-size: 40px;
+}
+.food-icons span {
+    transition: 0.3s;
+}
+
+.food-icons span:hover {
+    transform: translateY(-6px);
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.forgot-right {
+    width: 58%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.forgot-card {
+    width: 100%;
+    max-width: 590px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 32px 48px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.lock-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff1e8;
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.forgot-card h2 {
+    font-size: 34px;
+    line-height: 1.1;
+    color: #071b3a;
+
+    font-weight: 800;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+    color: #68758a;
+    font-size: 15px;
+    line-height: 1.45;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #151515;
+
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 12px;
+
+    outline: none;
+
+    background: white;
+    color: #222;
+
+    font-size: 15px;
+
+    transition: 0.25s;
+}
+
+.form-group input::placeholder {
+    color: #9aa7b9;
+}
+
+.form-group input:focus {
+    border-color: #ff5a00;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 90, 0, 0.08);
+}
+
+
+/* =========================
+   OTP
+========================= */
+
+#otp {
+    letter-spacing: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-message {
+    color: #e53935;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin: 3px 0 10px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.reset-button {
+    width: 100%;
+    height: 56px;
+
+    border: none;
+    border-radius: 13px;
+
+    background: #ff5a00;
+    color: white;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    box-shadow:
+        0 7px 18px rgba(255, 90, 0, 0.18);
+}
+
+.reset-button:hover {
+    background: #e84f00;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(255, 90, 0, 0.22);
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.back-login {
+    text-align: center;
+
+    color: #68758a;
+
+    font-size: 14px;
+
+    margin-top: 18px;
+}
+
+.back-login a {
+    color: #ff5a00;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    margin-left: 4px;
+}
+
+.back-login a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .forgot-left {
+        width: 40%;
+        padding: 45px 25px;
+    }
+
+    .forgot-right {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 38px;
+        margin-bottom: 45px;
+    }
+
+    .forgot-left h1 {
+        font-size: 42px;
+    }
+
+    .forgot-left p {
+        font-size: 16px;
+    }
+
+    .food-icons {
+        font-size: 35px;
+        gap: 22px;
+    }
+
+    .forgot-card {
+        padding: 28px 35px;
+    }
+
+    .forgot-card h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .forgot-page {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .forgot-left {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+
+        padding: 35px 20px 25px;
+    }
+
+    .logo {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .forgot-left h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .forgot-left p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .food-icons {
+        font-size: 30px;
+        gap: 18px;
+    }
+
+    .forgot-right {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .forgot-card {
+        padding: 28px 22px;
+        border-radius: 20px;
+    }
+
+    .forgot-card h2 {
+        font-size: 28px;
+    }
+
+    .form-group input {
+        height: 50px;
+    }
+
+    .reset-button {
+        height: 54px;
+    }
+}
